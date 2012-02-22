@@ -1,27 +1,23 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  statmod
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
 Version:          1.4.14
-Release:          1
+Release:          2
 Summary:          Statistical Modeling
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 BuildArch:        noarch
-Requires:         R-core
-%if %{with bootstrap}
-Requires:         R-MASS
-%else
-Requires:         R-MASS R-tweedie 
+Requires:         R-core R-MASS
+%if %{without bootstrap}
+Requires:         R-tweedie
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
-%if %{with bootstrap}
-BuildRequires:    R-MASS
-%else
-BuildRequires:    R-MASS R-tweedie 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-MASS
+%if %{without bootstrap}
+BuildRequires:    R-tweedie
 %endif
 
 %description
