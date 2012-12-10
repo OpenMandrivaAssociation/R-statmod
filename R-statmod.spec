@@ -1,4 +1,4 @@
-%bcond_with bootstrap
+%bcond_without bootstrap
 %global packname  statmod
 %global rlibdir  %{_datadir}/R/library
 
@@ -53,3 +53,15 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
+
+
+%changelog
+* Wed Feb 22 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4.14-2
++ Revision: 778935
+- Rebuild with proper dependencies
+
+* Sat Feb 18 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4.14-1
++ Revision: 776574
+- Import R-statmod
+- Import R-statmod
+
