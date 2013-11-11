@@ -3,13 +3,13 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          1.4.14
-Release:          3
+Version:          1.4.18
+Release:          1
 Summary:          Statistical Modeling
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/statmod_1.4.18.tar.gz
 BuildArch:        noarch
 Requires:         R-core R-MASS
 %if %{without bootstrap}
@@ -64,4 +64,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 776574
 - Import R-statmod
 - Import R-statmod
+
 
