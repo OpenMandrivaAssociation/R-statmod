@@ -53,6 +53,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
+/usr/lib/debug/.build-id/68/05fecdf5a63e84a5e02d7c41b86ef12ef7d95d
+/usr/lib/debug/.build-id/68/05fecdf5a63e84a5e02d7c41b86ef12ef7d95d.debug
+/usr/lib/debug%{_datadir}/R/library/statmod/libs/statmod.so.debug
+%{_datadir}/R/library/statmod/libs/statmod.so
+/usr/src/debug/statmod/statmod/src/gaussq.f
 
 
 %changelog
