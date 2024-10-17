@@ -8,7 +8,7 @@ Release:          3
 Summary:          Statistical Modeling
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/statmod_1.4.18.tar.gz
 Requires:         R-core R-MASS
 %if %{without bootstrap}
